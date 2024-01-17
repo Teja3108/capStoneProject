@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <h3>Issue Aadhar</h3>
+    <form [formGroup]="issueAdharForm" (submit)="onSubmitAdharForm()">
+      <div class="mb-3">
+        <label for="adharNumber" class="form-label">Aadhar Number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="adharNumber"
+          formControlName="adharNumber"
+        />
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
